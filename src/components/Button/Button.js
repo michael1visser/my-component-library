@@ -1,22 +1,19 @@
 import React from 'react';
 import './Button.css'
 
+import Icon from '../../Icons/Icon'
 
 
-// This is a functional component - just sent up a little differently as an arrow function!
-const Button = (props) => {
-    Button.defaultProps = {
-        type: "default"
-    }
+const Button = (props) => { 
 
     let types = ["danger", "success", "warning", "primary"]
     let classList = ["button"]
 
-    if(props.type=="default"){
-        classList.push("button-default")
+    if(props.hasOwnProperty('type')){
+        classList.push(`button-${props.type}`)
     }
     else{
-        classList.push(`button-${props.type}`)
+        classList.push("button-default")
     }
 
     if(props.large){
@@ -30,7 +27,17 @@ const Button = (props) => {
     if(props.flat){
         classList.push("flat")
     }
+
+    if (props.hasOwnProperty('icon') && props.hasOwnProperty('label')==false) {
+        classList.push("icon")
+    }
+
+    if (props.hasOwnProperty('icon') && props.hasOwnProperty('label')) {
+        classList.push("icon-text")
+    }
+
    return   <button className={classList.join(" ")}>
+       {props.hasOwnProperty('icon') ? <Icon src={props.icon} /> :null}
         {props.label}
     </button>
    

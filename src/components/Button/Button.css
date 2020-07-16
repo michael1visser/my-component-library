@@ -69,6 +69,22 @@
     font-size: 12px;
 }
 
+.icon {
+    padding: 10px 10px;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 12px;
+    
+}
+.icon-text img{
+    padding-right: 10px;
+}
+
 
 
 
