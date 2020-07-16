@@ -15,10 +15,10 @@ storiesOf('Form', module)
 
 //SELECT INPUT
 
-    .add('Select Small', () => <Form type="select" placeholder="Email" />)
-    .add('Select Medium', () => <Form type="select" medium placeholder="Email" />)
-    .add('Select Large', () => <Form type="select" large placeholder="Email" />)
+    .add('Select Small', () => <Form type="select" options={options} />)
+    .add('Select Medium', () => <Form type="select" medium options={options} />)
+    .add('Select Large', () => <Form type="select" large options={options} />)
 
-    .add('Select Filled Small', () => <Form type="select" placeholder="Email" />)
-    .add('Select Filled Medium', () => <Form type="select" medium placeholder="Email" />)
-    .add('Select Filled Large', () => <Form type="select" large placeholder="Email" />)
+    .add('Select Filled Small', () => <Form type="select" filled options={options} />)
+    .add('Select Filled Medium', () => <Form type="select" filled medium options={options} />)
+    .add('Select Filled Large', () => <Form type="select" filled large options={options} />)

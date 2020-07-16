@@ -13,8 +13,15 @@ const Form = (props) => {
     if(props.large){
         classes.push("large")
     }
+    if(props.filled){
+        classes.push("filled")
+    }
+    if(props.type=="select"){
+        classes.push("select")
+    }
 
     const emailForm = props => {
+
         return <div>
             <p>{props.placeholder}</p>
             <input type={props.type} placeholder={props.placeholder} className={classes.join(" ")} />
@@ -22,12 +29,14 @@ const Form = (props) => {
     }
 
     const selectForm = props => {
-        return <select>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
+
+        let options = props.options.map(val => {
+            return <option>{val}</option>
+        })
+
+        return <select value={props.value} className={classes.join(" ")}>
+            <option disabled selected hidden>Select</option>
+            {options}
         </select>
     }
 
