@@ -1,0 +1,27 @@
+.form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.input {
+    width: 225px;
+    border-color: #F1F3F4;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 7px 5px;
+    font-size: 15px;
+}
+
+p {
+    margin: 4px 0;
+}
+
+.medium {
+    font-size: 16px;
+    padding: 10px 5px;
+}
+
+.large {
+    font-size: 16px;
+    padding: 15px 5px;
+}
