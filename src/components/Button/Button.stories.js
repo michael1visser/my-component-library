@@ -57,3 +57,11 @@ storiesOf('Button', module)
 
     .add('Warning Flat ', () => <Button type="warning" flat label="Do Something" />) 
     .add('Warning Flat Large', () => <Button type="warning" flat large label="Do Something" />) 
+
+//SPECIAL
+
+    .add('Cart', () => <Button type="primary" flat icon="cart" label="Do Something" />) 
+    .add('Cart Text', () => <Button type="primary" flat icon="cart" label="Do Something" />) 
+
+    .add('Favorite', () => <Button type="primary" flat icon="heart" label="Do Something" />) 
+    .add('Favorite Text', () => <Button type="primary" flat icon="heart" label="Do Something" />) 
