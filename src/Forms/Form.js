@@ -3,6 +3,7 @@ import './Form.css'
 import Icon from './../Icons/Icon'
 import InputBlank from './InputBlank'
 import NumCounter from './NumCounter'
+import Checkbox from './Checkbox'
 
 
 
@@ -28,6 +29,15 @@ const Form = (props) => {
     }
     if(props.buttonInputFormLarge){
         classes.push("buttonInputForm-large")
+    }
+    if (props.type=="checkbox"){
+        classes.push("checkbox")
+    }
+    if (props.blue){
+        classes.push("blue")
+    }
+    if (props.checked){
+        classes.push("checked")
     }
 
     const emailForm = props => {
@@ -78,12 +88,22 @@ const Form = (props) => {
         </div>
     }
 
+    let checkbox = props => {
+       
+
+        return <div className="checkbox-container">
+                <Checkbox classes={classes} />
+                {props.hasOwnProperty("label") ? <p>{props.label}</p> :null}
+            </div>
+    }
+
     return (
         <form className="form">
             {props.type=="inputForm" ? emailForm(props) :null}
             {props.type=="select" ? selectForm(props) :null}
             {props.type=="numForm" ? numForm(props) :null}
             {props.type=="buttonInputForm" ? buttonInputForm(props) :null}
+            {props.type=="checkbox" ? checkbox(props) :null}
         </form>
     )
 }
