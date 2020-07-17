@@ -1,0 +1,44 @@
+.input {
+    width: 225px;
+    border-color: #F1F3F4;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 7px 5px;
+    font-size: 15px;
+}
+input:focus {
+    outline: none;
+}
+
+.medium {
+    font-size: 16px;
+    padding: 10px 5px;
+}
+
+.large {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.with-button{ 
+    width: 154px;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 12px;
+}
+
+.buttonInputForm-button{
+    background-color: #33A0FF;
+    color: #ffffff;
+    padding: 0 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+
+    font-size: 12px;
+
+}
+
+.buttonInputForm-large {
+    width: 180px;
+    padding: 15px 5px;
+}

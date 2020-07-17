@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './Email.css'
+import './InputBlank.css'
 
-export class Email extends Component {
+export class InputBlank extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -21,16 +21,19 @@ export class Email extends Component {
         this.setState({
             value: e.target.value
         })
+        if (this.props.className.hasOwnProperty("with-button")){
+        this.props.action(e.target.value)
+        }
+        
     }
 
     render() {
         return (
             <div>
-            <p>{this.props.props.placeholder}</p>
             <input type={this.props.props.type} placeholder={this.props.props.placeholder} className={this.props.className} onChange={this.handleChange} onSubmit={this.handleSubmit} />
         </div>
         )
     }
 }
 
-export default Email
+export default InputBlank

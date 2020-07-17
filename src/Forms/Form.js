@@ -1,7 +1,7 @@
 import React from 'react'
 import './Form.css'
 import Icon from './../Icons/Icon'
-import Email from './Email'
+import InputBlank from './InputBlank'
 import NumCounter from './NumCounter'
 
 
@@ -23,11 +23,18 @@ const Form = (props) => {
     if(props.type=="select"){
         classes.push("select")
     }
+    if(props.type=="buttonInputForm"){
+        classes.push("with-button")
+    }
+    if(props.buttonInputFormLarge){
+        classes.push("buttonInputForm-large")
+    }
 
     const emailForm = props => {
 
         return <div >
-           <Email props={props} className={classes.join(" ")}/>
+        <p>{props.placeholder}</p>
+           <InputBlank props={props} className={classes.join(" ")}/>
         </div>
     }
 
@@ -44,7 +51,6 @@ const Form = (props) => {
                     </select>
             
     }
-
    
 
     const numForm = props => {
@@ -54,11 +60,30 @@ const Form = (props) => {
             </div>
     }
 
+
+    const buttonInputForm = props => {
+        
+        
+        let formValue = ""
+
+        let submitInput = (value, e) =>{
+            e.preventDefault()
+
+             formValue = value
+        }
+
+        return <div className="button-input">
+           <InputBlank props={props} className={classes.join(" ")} action={submitInput} onSubmit={submitInput}/>
+           <input type="submit" className="buttonInputForm-button"  value={props.buttonText} />
+        </div>
+    }
+
     return (
         <form className="form">
-            {props.type=="email" ? emailForm(props) :null}
+            {props.type=="inputForm" ? emailForm(props) :null}
             {props.type=="select" ? selectForm(props) :null}
             {props.type=="numForm" ? numForm(props) :null}
+            {props.type=="buttonInputForm" ? buttonInputForm(props) :null}
         </form>
     )
 }

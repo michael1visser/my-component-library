@@ -17,9 +17,9 @@ storiesOf('Form', module)
 
 //EMAIL INPUT
     
-    .add('Email Small', () => <Form type="email" placeholder="Email" />)
-    .add('Email Medium', () => <Form type="email" medium placeholder="Email" />)
-    .add('Email Large', () => <Form type="email" large placeholder="Email" />)
+    .add('Email Small', () => <Form type="inputForm" placeholder="Email" />)
+    .add('Email Medium', () => <Form type="inputForm" medium placeholder="Email" />)
+    .add('Email Large', () => <Form type="inputForm" large placeholder="Email" />)
 
 //SELECT INPUT
 
@@ -32,3 +32,6 @@ storiesOf('Form', module)
     .add('Select Filled Large', () => <Form type="select" filled large options={options} />)
     
     .add('Number Counter', () => <Form type="numForm" filled min={numMin} max={numMax} value={startValue} step={stepIncrement} />)
+    
+    .add('Voucher', () => <Form type="buttonInputForm" placeholder="Voucher Code" buttonText="Redeem" medium/>)
+    .add('Voucher Large', () => <Form type="buttonInputForm" placeholder="Voucher Code" buttonText="Redeem" buttonInputFormLarge />)

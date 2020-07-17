@@ -48,3 +48,8 @@ p {
 .numCounter {
     width: 100px;
 }
+
+.button-input {
+    display: flex;
+    justify-content: flex-start;
+}
