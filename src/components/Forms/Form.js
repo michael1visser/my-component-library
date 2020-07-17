@@ -1,6 +1,6 @@
 import React from 'react'
 import './Form.css'
-import Icon from './../Icons/Icon'
+import Icon from '../Icons/Icon'
 import InputBlank from './InputBlank'
 import NumCounter from './NumCounter'
 import Checkbox from './Checkbox'

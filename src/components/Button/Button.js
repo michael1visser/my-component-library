@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css'
 
-import Icon from '../../Icons/Icon'
+import Icon from '../Icons/Icon'
 
 
 const Button = (props) => { 
