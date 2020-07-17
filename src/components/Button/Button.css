@@ -53,27 +53,27 @@
     border-color:  #FCC400;
 }
 
-.clean {
+.button-clean {
     background-color: #ffffff;
     color: var(--base-color)
 }
 
-.flat {
+.button-flat {
     background-color: var(--flat-color);
     color: var(--base-color);
     border: none;
 }
 
-.large {
+.button-large {
     padding: 15px 25px;
     font-size: 12px;
 }
 
-.icon {
+.button-icon {
     padding: 10px 10px;
 }
 
-.icon-text {
+.button-icon-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +81,7 @@
     font-size: 12px;
     
 }
-.icon-text img{
+.button-icon-text img{
     padding-right: 10px;
 }
 

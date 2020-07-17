@@ -17,23 +17,23 @@ const Button = (props) => {
     }
 
     if(props.large){
-        classList.push("large")
+        classList.push("button-large")
     }
     
     if(props.clean){
-        classList.push("clean")
+        classList.push("button-clean")
     }
 
     if(props.flat){
-        classList.push("flat")
+        classList.push("button-flat")
     }
 
     if (props.hasOwnProperty('icon') && props.hasOwnProperty('label')==false) {
-        classList.push("icon")
+        classList.push("button-icon")
     }
 
     if (props.hasOwnProperty('icon') && props.hasOwnProperty('label')) {
-        classList.push("icon-text")
+        classList.push("button-icon-text")
     }
 
    return   <button className={classList.join(" ")}>

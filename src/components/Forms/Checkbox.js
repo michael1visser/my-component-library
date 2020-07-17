@@ -14,7 +14,7 @@ export class Checkbox extends Component {
             this.state.classes.pop()
         }
         if (this.state.checked===true){
-            this.state.classes.push("checked")
+            this.state.classes.push("checkbox-checked")
         }
 
         this.setState({

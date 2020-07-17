@@ -51,7 +51,7 @@ input:focus {
     padding: 2px 0 0 5px;
 
 }
-.checkbox {
+.form-checkbox {
     --base-color: #000000;
     width: 15px;
     height: 15px;
@@ -60,11 +60,11 @@ input:focus {
     padding: 0 0;
 }
 
-.blue {
+.checkbox-blue {
     --base-color: #33A0FF;
 }
 
-.checked {
+.checkbox-checked {
     background-image: url(./../Icons/check.svg);
     background-repeat: no-repeat;
     background-position: center;

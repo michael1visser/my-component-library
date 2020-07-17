@@ -1,6 +1,5 @@
 import React from 'react'
 import './Form.css'
-import Icon from '../Icons/Icon'
 import InputBlank from './InputBlank'
 import NumCounter from './NumCounter'
 import Checkbox from './Checkbox'
@@ -13,13 +12,13 @@ const Form = (props) => {
     let classes = ["input"]
 
     if(props.medium){
-        classes.push("medium")
+        classes.push("form-medium")
     }
     if(props.large){
-        classes.push("large")
+        classes.push("form-large")
     }
     if(props.filled){
-        classes.push("filled")
+        classes.push("form-filled")
     }
     if(props.type=="select"){
         classes.push("select")
@@ -31,13 +30,13 @@ const Form = (props) => {
         classes.push("buttonInputForm-large")
     }
     if (props.type=="checkbox"){
-        classes.push("checkbox")
+        classes.push("form-checkbox")
     }
     if (props.blue){
-        classes.push("blue")
+        classes.push("checkbox-blue")
     }
     if (props.checked){
-        classes.push("checked")
+        classes.push("checkbox-checked")
     }
 
     const emailForm = props => {
@@ -65,7 +64,7 @@ const Form = (props) => {
 
     const numForm = props => {
 
-        return <div className={`numCounter ${classes.join(" ")}`}>
+        return <div className="numCounter form-filled">
                 <NumCounter props={props}/>
             </div>
     }

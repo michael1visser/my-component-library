@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import './NumCounter.css'
 import { render } from 'react-dom'
+import './NumCounter.css'
 
 export class NumCounter extends Component {
     constructor(props){
