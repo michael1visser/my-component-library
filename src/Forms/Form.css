@@ -44,3 +44,7 @@ p {
 .filled {
     background-color: #F1F3F4;
 }
+
+.numCounter {
+    width: 100px;
+}

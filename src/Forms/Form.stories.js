@@ -3,10 +3,15 @@ import { storiesOf } from '@storybook/react';
 
 import Form from './Form'
 
+//SELECT PROPS
 let options = ["Pizza", "Wings", "Burgers", "Fries", "Yes"]
 
+//NUMBER COUNTER PROPS
 let numMin = 1
 let numMax = 10
+let startValue = 1
+let stepIncrement = 1
+
 
 storiesOf('Form', module)
 
@@ -25,3 +30,5 @@ storiesOf('Form', module)
     .add('Select Filled Small', () => <Form type="select" filled options={options} />)
     .add('Select Filled Medium', () => <Form type="select" filled medium options={options} />)
     .add('Select Filled Large', () => <Form type="select" filled large options={options} />)
+    
+    .add('Number Counter', () => <Form type="numForm" filled min={numMin} max={numMax} value={startValue} step={stepIncrement} />)

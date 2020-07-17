@@ -1,7 +1,8 @@
 import React from 'react'
 import './Form.css'
 import Icon from './../Icons/Icon'
-import selectArrow from './../Icons/select_arrow.svg'
+import NumCounter from './NumCounter'
+
 
 
 
@@ -32,7 +33,6 @@ const Form = (props) => {
 
     const selectForm = props => {
 
-        let arrow = selectArrow
 
         let options = props.options.map(val => {
             return <option>{val}</option>
@@ -45,14 +45,20 @@ const Form = (props) => {
             
     }
 
+   
+
     const numForm = props => {
-        return 
+
+        return <div className={`numCounter ${classes.join(" ")}`}>
+                <NumCounter props={props}/>
+            </div>
     }
 
     return (
         <form className="form">
             {props.type=="email" ? emailForm(props) :null}
             {props.type=="select" ? selectForm(props) :null}
+            {props.type=="numForm" ? numForm(props) :null}
         </form>
     )
 }
