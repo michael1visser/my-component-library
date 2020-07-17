@@ -10,6 +10,12 @@
     padding-left: 20px;
 }
 
+.thumb-container-borderless {
+    padding-top: 20px;
+    border: none;
+    align-items: flex-start;
+}
+
 .thumb-horizontal:hover {
     background-color: #FAFAFB;
 }
@@ -23,6 +29,7 @@
 }
 
 .thumb-content {
+    width: 30%;
     height: 45%;
     display: flex;
     flex-direction: column;
@@ -42,6 +49,10 @@
 
 .thumb-content-vertical-flat {
     border-top: 1px solid #E5E8EA;
+}
+
+.thumb-content-borderless {
+    padding-top: 10px;
 }
 
 .thumb-hover-icons {

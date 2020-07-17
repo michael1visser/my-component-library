@@ -31,6 +31,10 @@ export default function Thumbnail(props) {
         heartIcon = <Icon src={whiteHeart} />
         cartIcon = <Icon src={whiteCart} />
     }
+    if(props.borderless){
+        classes.push("thumb-container-borderless")
+        contentClasses.push("thumb-content-borderless")
+    }
 
     return (
         <div className={classes.join(" ")}>
