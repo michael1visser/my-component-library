@@ -11,6 +11,9 @@ export default function Stars(props) {
     if(props.vertical){
         starClasses.push("stars-container-vertical")
     }
+    if(props.inline){
+        starClasses.push("stars-container-inline")
+    }
 
     for (let i=0; i<props.yellow ; i++){
         totalStars.push(<Icon src={yellow} />)
