@@ -5,7 +5,12 @@ import grey from '../Icons/grey_star.svg'
 
 
 export default function Stars(props) {
+    let starClasses = ["stars-container"]
     let totalStars = []
+
+    if(props.vertical){
+        starClasses.push("stars-container-vertical")
+    }
 
     for (let i=0; i<props.yellow ; i++){
         totalStars.push(<Icon src={yellow} />)
@@ -15,7 +20,7 @@ export default function Stars(props) {
     }
 
     return (
-        <div className="stars-container">
+        <div className={starClasses.join(" ")}>
             {totalStars}
         </div>
     )
