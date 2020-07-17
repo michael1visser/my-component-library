@@ -1,6 +1,7 @@
 import React from 'react'
 import './Form.css'
 import Icon from './../Icons/Icon'
+import Email from './Email'
 import NumCounter from './NumCounter'
 
 
@@ -25,9 +26,8 @@ const Form = (props) => {
 
     const emailForm = props => {
 
-        return <div>
-            <p>{props.placeholder}</p>
-            <input type={props.type} placeholder={props.placeholder} className={classes.join(" ")} />
+        return <div >
+           <Email props={props} className={classes.join(" ")}/>
         </div>
     }
 
