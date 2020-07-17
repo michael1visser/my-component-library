@@ -5,6 +5,9 @@ import Form from './Form'
 
 let options = ["Pizza", "Wings", "Burgers", "Fries", "Yes"]
 
+let numMin = 1
+let numMax = 10
+
 storiesOf('Form', module)
 
 //EMAIL INPUT

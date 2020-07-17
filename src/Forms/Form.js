@@ -1,5 +1,7 @@
 import React from 'react'
 import './Form.css'
+import Icon from './../Icons/Icon'
+import selectArrow from './../Icons/select_arrow.svg'
 
 
 
@@ -30,14 +32,21 @@ const Form = (props) => {
 
     const selectForm = props => {
 
+        let arrow = selectArrow
+
         let options = props.options.map(val => {
             return <option>{val}</option>
         })
 
         return <select value={props.value} className={classes.join(" ")}>
-            <option disabled selected hidden>Select</option>
-            {options}
-        </select>
+                        <option className="select-default" disabled selected hidden>Select</option>
+                        {options}
+                    </select>
+            
+    }
+
+    const numForm = props => {
+        return 
     }
 
     return (

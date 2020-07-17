@@ -26,9 +26,20 @@ p {
     padding: 15px 5px;
 }
 
+
 .select{
-    appearance: menulist;
+    background-image: url(../Icons/select_arrow.svg);
+    background-position: 95%;
+    background-repeat: no-repeat;
+    appearance: none;
+    opacity: 1;
 }
+
+.select:focus {
+    outline: none;
+}
+
+
 
 .filled {
     background-color: #F1F3F4;
