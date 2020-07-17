@@ -201,6 +201,8 @@
 }
 
 .thumb-inline-description {
-    font-size: 12px;
-    line-height: 1.6;
+    width: 400px;
+    font-size: 10px;
+    line-height: 2;
+    
 }
