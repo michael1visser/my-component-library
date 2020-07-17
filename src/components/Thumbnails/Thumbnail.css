@@ -1,0 +1,39 @@
+.thumb-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    width: 400px;
+    height: 200px;
+    border: 4px solid #FAFAFB;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.thumb-content {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stars-container {
+    display: flex;
+}
+
+.thumb-prices {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.thumb-current-price {
+    color: #D13B48;
+    
+}
+
+.thumb-previous-price {
+    color: #C1C8CE;
+    padding-left: 10px;
+    text-decoration-color: #5D656B;
+    text-decoration-line: line-through;
+}
