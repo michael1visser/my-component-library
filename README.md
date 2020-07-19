@@ -1,7 +1,7 @@
 # My Component Library
 
 My component library is a Storybook library of React components. Each component
-can be aletered by setting the values of its properties when invoking the
+can be altered by setting the values of its properties when invoking the
 component. Several examples of each component are given to show the versatility
 of the components.
 
