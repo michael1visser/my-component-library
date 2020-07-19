@@ -16,10 +16,11 @@ export default function Stars(props) {
     }
 
     for (let i=0; i<props.yellow ; i++){
-        totalStars.push(<Icon src={yellow} />)
+        totalStars.push(<Icon key={i} src={yellow} />)
     }
     for (let i=0; i<props.grey ; i++){
-        totalStars.push(<Icon src={grey} />)
+        let key = i + yellow
+        totalStars.push(<Icon key={key} src={grey} />)
     }
 
     return (

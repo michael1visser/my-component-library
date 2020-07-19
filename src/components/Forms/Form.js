@@ -50,12 +50,12 @@ const Form = (props) => {
     const selectForm = props => {
 
 
-        let options = props.options.map(val => {
-            return <option>{val}</option>
+        let options = props.options.map((val,idx) => {
+            return <option key={idx}>{val}</option>
         })
 
         return <select value={props.value} className={classes.join(" ")}>
-                        <option className="select-default" disabled selected hidden>Select</option>
+                        <option className="select-default">Select</option>
                         {options}
                     </select>
             
@@ -77,7 +77,7 @@ const Form = (props) => {
 
         let submitInput = (value, e) =>{
             e.preventDefault()
-
+          
              formValue = value
         }
 

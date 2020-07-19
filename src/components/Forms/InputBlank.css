@@ -10,12 +10,12 @@ input:focus {
     outline: none;
 }
 
-.medium {
+.form-medium {
     font-size: 16px;
     padding: 10px 5px;
 }
 
-.large {
+.form-large {
     font-size: 16px;
     padding: 15px 5px;
 }

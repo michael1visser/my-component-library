@@ -1,19 +1,20 @@
 .num-container {
-    width: 90%;
-    margin: 0 5px;
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
 .counter {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 2;
     font-weight: 700;
     color: #33A0FF;
     cursor: pointer;
 }
 
 .count {
-    font-size: 18px;
+    font-size: 14px;
     cursor: default;
 }

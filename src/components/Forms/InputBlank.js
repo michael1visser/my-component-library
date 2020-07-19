@@ -13,6 +13,10 @@ export class InputBlank extends Component {
         this.setState({
             value: e.target.value
         })
+
+        if (this.props.className.hasOwnProperty("with-button")){
+            this.props.action(e.target.value)
+            }
     }
 
     handleSubmit = (e) => {
