@@ -1,27 +1,21 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+# My Component Library
 
-# My First Component Library
-
-We have provided the starter code for you. From here, you'll be creating your very first component library with Storybook!
+My component library is a Storybook library of React components. Each component
+can be aletered by setting the values of its properties when invoking the
+component. Several examples of each component are given to show the versatility
+of the components.
 
 ## Prerequisites
 
-- Intro to React & React Components
-- Storybook
+A web browser able to render React components
 
-## Instructions
+## Instructions for use
 
-1.  Fork and clone this repository.
-1.  Change into the new directory.
-1.  Install dependencies.
-1.  Fulfill the listed requirements.
+Open the storybook using the URL provided below. To view a component, select it
+from the list on the left-hand side.
 
-## Requirements
+{URL NEEDED}
 
-Follow along as we create a new component library with different styles of buttons.
+## Contact me
 
-## [License](LICENSE)
-
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+https://github.com/michael1visser
