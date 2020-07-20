@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.65a64597.chunk.css",
+    "main.js": "/main.33521c66168a002e496c.bundle.js",
+    "main.css.map": "/static/css/main.65a64597.chunk.css.map",
+    "main.js.map": "/main.33521c66168a002e496c.bundle.js.map",
+    "runtime~main.js": "/runtime~main.33521c66168a002e496c.bundle.js",
+    "runtime~main.js.map": "/runtime~main.33521c66168a002e496c.bundle.js.map",
+    "vendors~main.js": "/vendors~main.33521c66168a002e496c.bundle.js",
+    "vendors~main.js.map": "/vendors~main.33521c66168a002e496c.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.e9ecfb5ecd1ef9e9cb1a91e743899654.js": "/precache-manifest.e9ecfb5ecd1ef9e9cb1a91e743899654.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/beats.svg": "/static/media/beats.efbd242f.svg",
+    "static/media/cart.svg": "/static/media/cart.f061aae4.svg",
+    "static/media/cart_white.svg": "/static/media/cart_white.98013573.svg",
+    "static/media/InputBlank.css": "/static/media/check.0ae49bb8.svg",
+    "static/media/grey_star.svg": "/static/media/grey_star.fc84bcac.svg",
+    "static/media/heart-white.svg": "/static/media/heart-white.bcf238ce.svg",
+    "static/media/hearts.svg": "/static/media/hearts.cce5b434.svg",
+    "static/media/hot.svg": "/static/media/hot.d08b1ddf.svg",
+    "static/media/macbook_pro.svg": "/static/media/macbook_pro.053b7fca.svg",
+    "static/media/Form.css": "/static/media/select_arrow.1a80d912.svg",
+    "static/media/yellow_star.svg": "/static/media/yellow_star.f8ce72af.svg",
+    "vendors~main.33521c66168a002e496c.bundle.js.LICENSE.txt": "/vendors~main.33521c66168a002e496c.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.33521c66168a002e496c.bundle.js",
+    "vendors~main.33521c66168a002e496c.bundle.js",
+    "static/css/main.65a64597.chunk.css",
+    "main.33521c66168a002e496c.bundle.js"
+  ]
+}
